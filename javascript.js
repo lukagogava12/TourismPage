@@ -110,5 +110,4 @@ const burgerMenu = document.querySelector(".burger-menu");
 
 iconMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("show");
-  console.log("kle");
 });
