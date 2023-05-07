@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="burger-menu flex show">
+      <img class="logo" src="logo.svg" alt="Image of the company logo" />
+      <p class="text">HOME</p>
+      <p class="text">ABOUT US</p>
+      <p class="text">OUR SERVICES</p>
+      <p class="text">TOUR PACKAGE</p>
+    </div>
+    <nav class="nav flex">
+      <img class="logo" src="logo.svg" alt="Image of the company logo" />
+      <div class="nav-links flex">
+        <p class="text">HOME</p>
+        <p class="text">ABOUT US</p>
+        <p class="text">OUR SERVICES</p>
+        <p class="text">TOUR PACKAGE</p>
+        <img class="icon-menu" src="icon-menu.png" alt="Icon for menu" />
+      </div>
+    </nav>
+    <header class="header-section">
+      <button class="slide-btn slide-left" onclick="prev()">&#8592;</button>
+      <button class="slide-btn slide-right" onclick="next()">&#8594;</button>
+      <img
+        class="transparent"
+        src="./images/slider-greece.jpg"
+        alt="Image of Greece"
+      />
+      <img
+        class="slider-img"
+        src="./images/slider-greece.jpg"
+        alt="Image of Greece"
+      />
+
+      <img
+        class="slider-img"
+        src="./images/slider-italy.jpg"
+        alt="Image of Italy"
+      />
+      <img
+        class="slider-img"
+        src="./images/slider-paris.jpg"
+        alt="Image of Eifel tower in Paris"
+      />
+      <img
+        class="slider-img"
+        src="./images/slider-thailand.jpg"
+        alt="Image of Thailand"
+      />
+      <p class="slider-quote">TRAVEL WITH UNIQUE EXPERIENCE</p>
+      <p class="slider-country">Discover Greece</p>
+    </header>
+    <div class="services-section flex">
+      <div class="modal hide"></div>
+      <div class="services-description flex">
+        <p>DISCOVER</p>
+        <h2>Our Hot Services</h2>
+        <p class="text">
+          From flights and hotels to tours and activities, we offer a complete
+          travel solution. Book with ease and enjoy peace of mind knowing that
+          every detail is taken care of.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="card services-card"></div>
+        <div class="card services-card"></div>
+        <div class="card services-card"></div>
+        <div class="card services-card"></div>
+        <div class="card services-card"></div>
+        <div class="card services-card"></div>
+      </div>
+    </div>
+    <div class="video-section flex">
+      <p>DISCOVER</p>
+      <h2>Watch Our Video Tour</h2>
+      <video
+        class="video"
+        src="./video/Modern 5 Seconds Countdown Video Free Stock Video Clip HD.mp4"
+        width="663px"
+        height="auto"
+        controls
+      ></video>
+    </div>
+    <div class="statistics-section flex">
+      <div class="statistic flex">
+        <img src="./images/star.png" alt="emoji of star" />
+        <h3>120,859</h3>
+        <p class="text">HAPPY TRAVELLERS</p>
+      </div>
+      <div class="statistic flex">
+        <img src="./images/Tour.png" alt="image of Easter Island statues" />
+        <h3>2554</h3>
+        <p class="text">SATISFIED TOURS</p>
+      </div>
+      <div class="statistic flex">
+        <img src="./images/destination.png" alt="Image of Earth" />
+        <h3>798</h3>
+        <p class="text">DESTINATION</p>
+      </div>
+      <div class="statistic flex">
+        <img src="./images/hotel.png" alt="Image of a hotel" />
+        <h3>984</h3>
+        <p class="text">HOTELS & RESORTS</p>
+      </div>
+    </div>
+    <hr />
+    <div class="package-section">
+      <p>WE OFFER</p>
+      <h2>Popular Tour Packages</h2>
+      <div class="package-cards flex">
+        <div class="card package-card honeymoon">
+          <img class="tour-img" src="./images/greece.jpg" />
+          <p class="text">$299/person</p>
+          <h4>Blue Beauty of Greece</h4>
+          <p class="text">5 Days / 6 Night</p>
+        </div>
+        <div class="card package-card holidays">
+          <img class="tour-img" src="./images/phuket.jpg" />
+          <p class="text">$199/person</p>
+          <h4>Nature of Phuket</h4>
+          <p class="text">3 Days / 4 Night</p>
+        </div>
+        <div class="card package-card holidays">
+          <img class="tour-img" src="./images/paris.jpg" />
+          <p class="text">$109/person</p>
+          <h4>World Tour of Paris</h4>
+          <p class="text">7 Days / 8 Night</p>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe-section flex">
+      <h1>Get 10% Off on Your Next Travel</h1>
+      <p>Maximum discout 1000$ per person</p>
+      <form>
+        <input
+          type="email"
+          class="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <button class="btn" type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+    <div class="happy-customers-section">
+      <p>OUR SMILES</p>
+      <h2>Happy Travellers</h2>
+      <div class="travellers flex">
+        <div class="traveller-card flex">
+          <img
+            class="traveller"
+            src="./images/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
+            alt="photo of random person"
+          />
+          <p class="name">Jgarkava Jgarku</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            inventore corporis repellat molestiae earum, potus ducimus nisi
+            recusandae repellat distinctio tenetur?
+          </p>
+        </div>
+        <div class="traveller-card flex">
+          <img
+            class="traveller"
+            src="./images/jurica-koletic-7YVZYZeITc8-unsplash.jpg"
+            alt="photo of random person"
+          />
+          <p class="name">Tskhvitava Mukhuturi</p>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            inventore corporis repellat molestiae earum, potus ducimus nisi
+            recusandae repellat distinctio tenetur?
+          </p>
+        </div>
+        <div class="traveller-card flex">
+          <img
+            class="traveller"
+            src="./images/prince-akachi-J1OScm_uHUQ-unsplash.jpg"
+            alt="photo of random person"
+          />
+          <p class="name">Bokolava Irmizoldi</p>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            inventore corporis repellat molestiae earum, potus ducimus nisi
+            recusandae repellat distinctio tenetur?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="book-now-section flex">
+      <p>Ready to plan your trip?</p>
+      <button class="btn book-now-btn">BOOK NOW</button>
+    </div>
+    <div class="popular-section">
+      <p>DESTINATION</p>
+      <h2>Popular Tourism Countries</h2>
+      <div class="popular-countries flex">
+        <div class="popular-card popular-card-1 flex">
+          <div class="popular-card-text">
+            <p class="popular-country-name">Thailand</p>
+            <p class="popular-country-price">$900-$1900</p>
+          </div>
+          <button class="btn">&rarr;</button>
+        </div>
+        <div class="popular-card popular-card-2 flex">
+          <div class="popular-card-text">
+            <p class="popular-country-name">Italy</p>
+            <p class="popular-country-price">$700-$1800</p>
+          </div>
+          <button class="btn">&rarr;</button>
+        </div>
+        <div class="popular-card popular-card-3 flex">
+          <div class="popular-card-text">
+            <p class="popular-country-name">Indonesia</p>
+            <p class="popular-country-price">$300-$1100</p>
+          </div>
+          <button class="btn">&rarr;</button>
+        </div>
+        <div class="popular-card popular-card-4 flex">
+          <div class="popular-card-text">
+            <p class="popular-country-name">Singapore</p>
+            <p class="popular-country-price">$1900-$2400</p>
+          </div>
+          <button class="btn">&rarr;</button>
+        </div>
+      </div>
+    </div>
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5958.300579715896!2d44.85244089456269!3d41.69569118504911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440dbc8644923b%3A0xa1e3f5399328438b!2sVazisubani%20Settlement%2C%20Tbilisi!5e0!3m2!1sen!2sge!4v1683327212470!5m2!1sen!2sge"
+        width="100%"
+        height="435px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer class="footer-section">
+      <div class="upper-footer-section flex">
+        <div class="footer-text-container flex">
+          <div class="footer-text">
+            <p class="footer-text-header">Quick Links</p>
+            <p class="footer-text-below">Home</p>
+            <p class="footer-text-below">About Company</p>
+            <p class="footer-text-below">Testimonials</p>
+            <p class="footer-text-below">Infrastructure</p>
+          </div>
+          <div class="footer-text">
+            <p class="footer-text-header">Support</p>
+            <p class="footer-text-below">Get Started</p>
+            <p class="footer-text-below">Lorem</p>
+            <p class="footer-text-below">Ipsum</p>
+            <p class="footer-text-below">Help</p>
+          </div>
+          <div class="footer-text">
+            <p class="footer-text-header">Adress</p>
+            <p class="footer-text-below">14, 1 Ellis bridge ST,</p>
+            <p class="footer-text-below">auckland 3500, Australia</p>
+            <p class="footer-text-below">+99557644761</p>
+            <p class="footer-text-below">lukagogava12@gmail.com</p>
+          </div>
+        </div>
+
+        <form class="footer-form">
+          <label class="label" for="footer-email"
+            >Subscribe to our newsletter</label
+          >
+          <input
+            type="email"
+            class="footer-email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <button class="footer-btn">&#9993;</button>
+        </form>
+      </div>
+      <hr />
+      <p class="bottom-text">tourism©All Rights Reserved</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
